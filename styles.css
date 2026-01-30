@@ -29,6 +29,16 @@ h1 {
     font-size: 2.5rem;
     color: #2d3748;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.title-icon {
+    width: 40px;
+    height: 40px;
+    color: #667eea;
 }
 
 .subtitle {
@@ -153,6 +163,16 @@ h1 {
     background: #edf2f7;
     border-radius: 6px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.hint-icon {
+    width: 18px;
+    height: 18px;
+    color: #a0aec0;
 }
 
 .files-list {
@@ -190,9 +210,11 @@ h1 {
 }
 
 .drag-handle {
+    width: 24px;
+    height: 24px;
     color: #a0aec0;
-    font-size: 1.5rem;
     cursor: grab;
+    flex-shrink: 0;
 }
 
 .file-item.dragging .drag-handle {

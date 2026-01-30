@@ -97,7 +97,9 @@ function createFileItem(file, index) {
     const fileSize = formatFileSize(file.size);
     
     div.innerHTML = `
-        <span class="drag-handle">??</span>
+        <svg class="drag-handle" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+        </svg>
         <div class="file-icon">PDF</div>
         <div class="file-info">
             <div class="file-name">${file.name}</div>
